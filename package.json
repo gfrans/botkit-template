@@ -14,8 +14,11 @@
   "license": "MIT",
   "dependencies": {
     "botkit": "^0.6.16",
+    "canvas": "^1.6.12",
     "figlet": "^1.2.0",
-    "node-env-file": "0.1.8"
+    "gifencoder": "^1.1.0",
+    "node-env-file": "0.1.8",
+    "puppeteer": "^1.8.0"
   },
   "repository": {
     "type": "git",
