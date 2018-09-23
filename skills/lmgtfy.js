@@ -12,7 +12,7 @@ module.exports = function (controller) {
         var fs = require('fs');
 
         // canvas setup
-        const Canvas = require('canvas');
+        const Canvas = require('canvas-prebuilt');
         const Image = Canvas.Image;
 
         // gifencoder setup -- this works!
