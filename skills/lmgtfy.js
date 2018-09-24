@@ -36,7 +36,7 @@ module.exports = function (controller) {
 
           // test creating a gif from successive pngs streamed from screenshots
           var img = new Image;
-          var canvas = new Canvas(800, 600);
+          var canvas = Canvas.createCanvas(800, 600);
           var ctx = canvas.getContext('2d');
           img.src = derp;
           ctx.drawImage(img, 0, 0, 800, 600); // need to do the draw AFTER creating stream
