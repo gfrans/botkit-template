@@ -26,7 +26,7 @@ module.exports = function (controller) {
 
 
         (async() => {
-          const browser = await puppeteer.launch();
+          const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
           console.log(await browser.version());
           const page = await browser.newPage();
           await page.goto('http://lmgtfy.com/?q=derp'); //, {waitUntil: 'networkidle2'});
